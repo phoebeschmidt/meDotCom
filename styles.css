@@ -1,0 +1,31 @@
+.top-nav {
+  flex-grow: 2;
+  /*font-family: "Times New Roman";*/
+  font-style: italic;
+  /*font-variant: small-caps;*/
+  font-size: 24px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.nav-button {
+  flex-grow: 1;
+
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  /*font-variant: small-caps;*/
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 14px;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
