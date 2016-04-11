@@ -1,0 +1,3 @@
+exclude: [old]
+timezone: America/Tijuana
+url: "http://localhost:4000/"
