@@ -1,8 +1,19 @@
+/*#html {
+  width: 100%;
+  height:100%;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+}*/
+
+h3 {
+  font-family: "Times New Roman";
+}
 .top-nav {
   flex-grow: 2;
-  /*font-family: "Times New Roman";*/
   font-style: italic;
-  /*font-variant: small-caps;*/
   font-size: 24px;
 }
 
@@ -11,6 +22,7 @@
   flex-direction: row;
   padding-top: 20px;
   padding-left: 10px;
+  height: 10vh;
 }
 
 .nav-button {
@@ -20,7 +32,6 @@
   text-decoration: none;
   border: none;
   text-align: center;
-  /*font-variant: small-caps;*/
   font-family: "Times New Roman";
   font-style: italic;
   font-size: 14px;
@@ -29,4 +40,36 @@
 a {
   color:inherit;
   text-decoration: none;
- }
+}
+
+ .content-statement {
+   padding-left: 10px;
+   padding-top: 20px;
+   font-family: "Times New Roman";
+   font-size: 14px;
+}
+
+.real-link {
+  text-decoration: underline;
+}
+
+.resume {
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.resume-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.warning {
+  font-size: 24px;
+  font-family: "Times New Roman";
+}
+
+.last-updated {
+  float: right;
+  font-family: "Times New Roman";
+}
