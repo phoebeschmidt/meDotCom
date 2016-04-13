@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phoebe Bednar Schmidt</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+  <script src="../processing.js"></script>
+
+</head>
+
+<body>
+  {% include navigation.html %}
+  <canvas class="home-sketch" data-processing-sources="../processing/noiseWave/noiseWave.pde"></canvas>
+  {{ content }}
+</body>
+</html>

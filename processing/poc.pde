@@ -16,21 +16,20 @@ int i; //index for building snake from 0
 int direction; //direction snake is moving
 boolean isFood = false;
 PVector food;
-int score = 0;
+int score;;
 PVector head;
 boolean dead = false;
-int width, height;
+int w, h;
 
 void setup() {
-  //size(200, 200); // size of the screen
   doResize();
-  background(255); // white background
-  stroke(255); // the thin line around the squares is white
+  score = 0;
+  background(0); // white background
+  stroke(0); // the thin line around the squares is white
   frameRate(20);
 
-  numColumns = int(width/squareWidth); // number of columns in grid
-  numRows = int(height/squareHeight);  // number of rows in grid
-  console.log("cols, rows", numColumns, numRows);
+  numColumns = int(w/squareWidth); // number of columns in grid
+  numRows = int(h/squareHeight);  // number of rows in grid
   length = 5; //starting length of snake
   i = 0;
   direction = RIGHT;
@@ -42,38 +41,25 @@ void setup() {
 
   food = new PVector();
   head = snake.get(0);
-
 }
 
-
 void draw() {
-  background(255);
-
+  background(0);
   if(!dead) {
     wrap(snake);
-    drawSnake(snake, 0);
+    drawSnake(snake, 255);
     drawFood();
-    text(score, width-10, height-10)
   } else {
-
     drawSnake(snake, color(255, 0, 0));
-    // = createFont("Monospaced", 24);
-    //textFont(serif);
-  //  fill(0);
-    //textAlign(CENTER, BOTTOM)
-//    text("Press space to restart", width/2, height/2);
-  //  textSize(15);
-    //text("Score: " + score, width/2 , height/2);
     frameRate(0);
   }
+  text(score, width-width*.1, height-height*.1)
 }
 
 void keyPressed() {
-  if (key.code == 32) {
-     if (dead) {
-      dead = false;
-      setup();
-    }
+  if (key.code == 32 && dead) {
+     dead = false;
+     setup()
   }
   switch(keyCode) {
     case UP:
@@ -189,10 +175,9 @@ boolean equalsSelf(PVector newpt) {
 }
 
 void doResize() {
-  console.log("Resizing");
-  height = document.getElementById('snake-container').clientHeight;
-  width = document.getElementById('snake-container').clientWidth;
-  size(width, height);
+  h = document.getElementById('snake-container').clientHeight;
+  w = document.getElementById('snake-container').clientWidth;
+  size(w, h);
 }
 
 window.onresize = doResize();
