@@ -1,28 +1,29 @@
-/*#html {
-  width: 100%;
-  height:100%;
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-
-#body {
-  width: 100%;
-  height: 100%;
-}*/
 
 h3 {
   font-family: "Times New Roman";
+  font-size: 18px;
 }
 .top-nav {
   flex-grow: 2;
   font-style: italic;
-  font-size: 24px;
+  font-size: 48px;
 }
 
 .nav-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-left: 10px;
   height: 10vh;
+
+  /* flex child */
+  flex-grow: 1;
 }
 
 .nav-button {
@@ -34,7 +35,7 @@ h3 {
   text-align: center;
   font-family: "Times New Roman";
   font-style: italic;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 a {
@@ -47,6 +48,11 @@ a {
    padding-top: 20px;
    font-family: "Times New Roman";
    font-size: 14px;
+   width: 100vw;
+   height: 60vh;
+
+   /* flex child */
+   flex-grow: 1;
 }
 
 .real-link {
@@ -72,4 +78,28 @@ a {
 .last-updated {
   float: right;
   font-family: "Times New Roman";
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  flex-grow: 1;
+}
+
+.snake-container {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.snake {
+  width: 50%;
+}
+
+.home-sketch {
+  height: 60%;
+  width: 100%;
 }
