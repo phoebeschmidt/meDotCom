@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/styles/styles.css">
   <script src="../processing.js"></script>
+
 </head>
 
 <body>
   {% include navigation.html %}
-  <div class=content-statement>{{ content }}</div>
+  <canvas class="home-sketch" data-processing-sources="../processing/noiseWave/noiseWave.pde"></canvas>
+  {{ content }}
 </body>
 </html>
