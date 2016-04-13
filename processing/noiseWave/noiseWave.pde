@@ -1,5 +1,4 @@
 //Noise Wave by Daniel Schiffman https://processing.org/examples/noisewave.html
-console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 
 float yoff = 0.0;        // 2nd dimension of perlin noise
 

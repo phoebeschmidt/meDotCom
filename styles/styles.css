@@ -12,6 +12,7 @@ h3 {
   flex-grow: 2;
   font-style: italic;
   font-size: 48px;
+  width: 50%;
 }
 
 .nav-container {
@@ -29,13 +30,12 @@ h3 {
 .nav-button {
   flex-grow: 1;
 
-  background-color: white;
   text-decoration: none;
-  border: none;
   text-align: center;
   font-family: "Times New Roman";
   font-style: italic;
   font-size: 24px;
+  
 }
 
 a {
@@ -82,11 +82,14 @@ a {
 
 .about-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .about-text {
   flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  padding-right: 40px;
 }
 
 .snake-container {
@@ -96,10 +99,16 @@ a {
 }
 
 .snake {
-  width: 50%;
+  width: 75%;
 }
 
 .home-sketch {
   height: 60%;
   width: 100%;
+}
+
+.footer {
+  float: left;
+  padding-right: 10px;
+  font-style: italic;
 }

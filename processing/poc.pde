@@ -1,6 +1,5 @@
 
 var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],wid=w.innerWidth||e.clientWidth||g.clientWidth,height=w.innerHeight||e.clientHeight||g.clientHeight;
-console.log(d.getElementById('snake-container').clientHeight);
 
 int squareWidth = 15;
 int squareHeight = 15;
